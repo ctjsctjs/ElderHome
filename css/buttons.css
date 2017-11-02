@@ -1,0 +1,48 @@
+/*BUTTON*/
+.button{
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  padding: 9px 15px 9px;
+  font-size: 13px;
+  height: 35px;
+  width: 100px;
+
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.button:hover{
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.button-blue{
+  background-color: #27989f;
+  border: 1px solid white;
+  color: white;
+}
+
+.button-blue:hover{
+  background-color: #22858b;
+  border: 1px solid white;
+  color: white;
+}
+
+#main-cfm{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 9px 15px 9px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}

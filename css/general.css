@@ -1,0 +1,92 @@
+
+/*GENERAL*/
+/*RESET STYLING*/
+span, ul, li, div, a{display:block;}
+input, button, submit { border:none; }
+button:focus, input:focus {outline:0 !important;}
+*
+{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lato', 'FontAwesome', sans-serif;
+  padding-right:0px !important;
+  margin-right:0px !important;
+}
+
+.responsive-wrapper{
+  width:100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cont-row{
+  width: 100%;
+  height: auto;
+  display: block;
+  clear: both;
+}
+
+/*NAV*/
+.nav{
+  z-index:10;
+  padding: 0 20px;
+  background-color: white;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2);
+}
+
+.pub-nav{
+  z-index:10;
+  background-color: transparent;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.nav-logo{
+  width:100px;
+  display:block;
+  position:absolute;
+}
+
+.nav-logo img{
+  margin-top: 22px;
+  width: 100px;
+}
+
+.nav ul{
+  max-width: 1000px;
+  margin:  20px auto;
+  text-align: center;
+}
+
+.nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+
+.nav-push{
+  height:60px;
+  display:block;
+  width:100%;
+}
+
+.float-left{
+  float:left;
+}
+
+.float-right{
+  float:right;
+}
