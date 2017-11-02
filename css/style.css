@@ -115,6 +115,121 @@
   margin-right:6px;
 }
 
+.heading-bar{
+  background-color:white;
+  width:100%;
+  padding: 50px 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+.heading-bar span{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #444;
+}
+
+.home-box{
+  width:200px;
+  background-color:white;
+  padding:40px 20px;
+  border-radius:2px;
+  border: 1px solid #efefef;
+}
+
+.home-map{
+  margin-top: 50px;
+  float:right;
+  width: calc(100% - 210px);
+  background-color:white;
+  padding:40px 20px;
+  border-radius:2px;
+  border: 1px solid #efefef;
+  height: auto;
+}
+
+.home-map img{
+  height: 500px;
+}
+
+.col-left{
+  float:left;
+}
+
+#home-lvl{
+  margin-top:50px;
+}
+
+#home-lvl span{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+
+#home-legends{
+  margin-top:10px;
+}
+
+#home-legends ul li:first-child{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+
+#home-legends ul li{
+  font-size:13px;
+  padding: 20px 0;
+}
+
+.legend-img{
+  height: 20px;
+  width: 20px;
+  background-color: #efefef;
+  float:left;
+  margin-right:10px;
+}
+
+.level-mod{
+  text-align: center;
+  margin-top:20px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.value-button {
+  color:white;
+  display: inline-block;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #27989f;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+  background: #22858b;
+}
+
 
 @media only screen and (max-width: 480px) {
   .register-column{
@@ -123,4 +238,45 @@
   .margin-right{
     margin-right:0px;
   }
+}
+
+
+/*PHONE*/
+@media only screen
+  and (max-width: 736px) {
+    /*NAV MOBILE*/
+
+    #nav-hamburger{
+      display:block;
+    }
+/*
+    .nav-logout{
+      display:none;
+    }
+
+    .nav-center{
+      position:relative;
+      margin-top:50px;
+      display:none;
+    }
+
+    .nav-center li{
+      display:block;
+      padding: 20px 14px;
+      height:60px;
+      background-color:white;
+      -webkit-transition: 200ms ease;
+      transition: 200ms ease;
+    }
+
+    .nav-center li:hover{
+      background-color:#fafafa;
+      -webkit-transition: 200ms ease;
+      transition: 200ms ease;
+    }
+
+    #nav-mobile-logout{
+      display:block;
+    }
+    */
 }

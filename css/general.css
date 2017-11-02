@@ -18,6 +18,11 @@ body{
   margin-right:0px !important;
 }
 
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: #444;
+}
+
 .responsive-wrapper{
   width:100%;
   max-width: 1440px;
@@ -30,6 +35,11 @@ body{
   height: auto;
   display: block;
   clear: both;
+}
+
+.nav-push{
+  height:60px;
+  width:100%;
 }
 
 /*NAV*/
@@ -67,7 +77,7 @@ body{
 
 .nav ul{
   max-width: 1000px;
-  margin:  20px auto;
+  margin:  12px auto;
   text-align: center;
 }
 
@@ -76,6 +86,46 @@ body{
   padding: 0 20px;
 }
 
+.nav ul li a{
+  color: #27989f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav ul li a:hover{
+  color: #22858b;
+}
+
+.nav-form{
+  width:200px;
+  padding:10px;
+  height:40px;
+  border-radius: 2px;
+  border: 1px solid #eee;
+
+  transition: border linear 0.2s;
+  -ms-transition: border linear 0.2s;
+  -webkit-transition: border linear 0.2 s;
+}
+
+.nav-form:focus{
+  border: 1px solid #27989f;
+  transition: border linear 0.2s;
+  -ms-transition: border linear 0.2s;
+  -webkit-transition: border linear 0.2 s;
+}
+
+#nav-hamburger{
+  display:none;
+  cursor: pointer;
+  font-size:25px;
+  margin-top:8px;
+  color: #ff7c7c;
+}
+
+#nav-mobile-logout{
+  display:none;
+}
 
 .nav-push{
   height:60px;
