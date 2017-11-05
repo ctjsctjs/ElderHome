@@ -11,49 +11,62 @@
 </head>
 <body>
   <nav class="nav">
-    <a href="home.html" class="nav-logo"><img src="images/logo.svg"></a>
-    <ul>
-      <li><a href="#">Patients</a></li>
+    <ul class="nav-main-link">
+      <li><a href="patients.html">Patients</a></li>
       <li><a href="#">Staff Schedule</a></li>
-      <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-      <li><input type="text" class="nav-form" name="search" placeholder="Search patients" value=""></li>
-      <li><a href="#">Back</a></li>
     </ul>
-    <div class="float-right">
-      <i class="fa fa-bars" aria-hidden="true" id="nav-hamburger"></i>
+    <div id="nav-responsive">
+      <a href="home.html" class="nav-logo"><img src="images/logo.svg"></a>
+      <ul class="nav-right">
+        <li><a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i></a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">awdawd</a></li>
+              <li><a href="#">awdawd</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+        <li><input type="text" class="nav-form" name="search" placeholder="Search patients" value=""></li>
+        <li><a href="#">Back</a></li>
+      </ul>
+      <div class="float-right">
+        <i class="fa fa-bars" aria-hidden="true" id="nav-hamburger"></i>
+      </div>
     </div>
   </nav>
   <div class="wrapper">
     <div class="cont-home">
       <div class="nav-push"></div>
       <div class="heading-bar">
-        <span>Overview</span>
+        <div class="responsive-wrapper-heading">
+          <span>Overview</span>
+        </div>
       </div>
       <div class="responsive-wrapper">
         <div class="col-left">
-        <div class="home-box" id="home-lvl">
-          <span>Level</span>
-          <div class="level-mod">
-            <form>
-              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-              <input type="number" id="number" value="0" />
-              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-            </form>
+          <div class="home-box" id="home-lvl">
+            <span>Level</span>
+            <div class="level-mod">
+              <form>
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+                <input type="number" id="number" value="0" />
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+              </form>
+            </div>
+          </div>
+          <div class="home-box" id="home-legends">
+            <ul>
+              <li>Legends</li>
+              <li><div class="legend-img"></div>Patients</li>
+              <li><div class="legend-img"></div>Table</li>
+              <li><div class="legend-img"></div>Chair</li>
+              <li><div class="legend-img"></div>Patients</li>
+              <li><div class="legend-img"></div>Table</li>
+              <li><div class="legend-img"></div>Chair</li>
+            </ul>
           </div>
         </div>
-        <div class="home-box" id="home-legends">
-          <ul>
-            <li>Legends</li>
-            <li><div class="legend-img"></div>Patients</li>
-            <li><div class="legend-img"></div>Table</li>
-            <li><div class="legend-img"></div>Chair</li>
-            <li><div class="legend-img"></div>Patients</li>
-            <li><div class="legend-img"></div>Table</li>
-            <li><div class="legend-img"></div>Chair</li>
-          </ul>
-        </div>
-      </div>
         <div class="home-map">
           <div class="elderly"></div>
         </div>

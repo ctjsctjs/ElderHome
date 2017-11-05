@@ -4,7 +4,6 @@ $(document).ready(function () {
   $('#nav-hamburger').click(function(){
     $(".nav-center").slideToggle(100, "linear");
   });
-
 });
 
 function increaseValue() {

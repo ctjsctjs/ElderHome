@@ -21,6 +21,10 @@
   transition: 200ms ease;
 }
 
+.btn-wide{
+  width:100%;
+}
+
 .button:hover{
   -webkit-transition: 200ms ease;
   transition: 200ms ease;

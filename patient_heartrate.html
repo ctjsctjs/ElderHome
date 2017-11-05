@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+  <title>ElderHome</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/buttons.css">
+</head>
+<body>
+  <nav class="nav">
+    <ul class="nav-main-link">
+      <li><a href="patients.html">Patients</a></li>
+      <li><a href="#">Staff Schedule</a></li>
+    </ul>
+    <div id="nav-responsive">
+      <a href="home.html" class="nav-logo"><img src="images/logo.svg"></a>
+      <ul class="nav-right">
+        <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">awdawd</a></li>
+              <li><a href="#">awdawd</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+        <li><input type="text" class="nav-form" name="search" placeholder="Search patients" value=""></li>
+        <li><a href="#">Back</a></li>
+      </ul>
+      <div class="float-right">
+        <i class="fa fa-bars" aria-hidden="true" id="nav-hamburger"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <div class="cont-general">
+      <div class="nav-push"></div>
+      <div class="heading-bar">
+        <div class="responsive-wrapper-heading">
+          <span>Heart Rate Record</span>
+        </div>
+      </div>
+      <div class="responsive-wrapper">
+        <div class="col-left">
+          <div class="home-box" id="patient-info">
+            <div class="wrapper-patient-pic">
+              <img class="patient-pic" src="images/bob.jpg">
+            </div>
+            <a href="patient_report.html" id="patient-info-h">Bob Lim</a>
+            <hr class="divider">
+            <ul class="patient-list">
+              <li>Recent readings</li>
+              <li>Last reading: 85 BPM</li>
+              <li>Last 24 hours: 96 BPM</li>
+              <li>Last week: 94 BPM</li>
+              <li>Last month: 64 BPM</li>
+            </ul>
+            <button type="submit" class="button btn-wide button-blue" id="trace-patient-btn">Trace Patient</button>
+          </div>
+        </div>
+        <div class="col-right panel" id="heartrate_panel">
+          <span class="panel-calendar">Showing results for: <input type="text" class="nav-form" name="search" placeholder="Today" value=""></span>
+          <button class="button button-blue float-right" id="panel-edit">Edit</button>
+        </div>
+        <div class="col-right">
+          <div class="data">
+            <span class="data-date">Today, 05/11/2017</span>
+            <div class="data-row">
+              <ul>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="data">
+            <span class="data-date">Today, 05/11/2017</span>
+            <div class="data-row">
+              <ul>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+                <li class="data-box">
+                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 a.m.</span>
+                  <hr class="data-divider">
+                  <span class="data-heartrate-label">Avg</span>
+                  <span class="data-heartrate-main">100</span>
+                  <hr class="data-divider">
+                  <div class="float-left">
+                    <span class="data-heartrate-label">min</span>
+                    <span>90</span>
+                  </div>
+                  <div class="float-right">
+                    <span class="data-heartrate-label">max</span>
+                    <span>110</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/generateContent.js"></script>
+</body>

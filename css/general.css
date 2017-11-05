@@ -24,11 +24,26 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .responsive-wrapper{
+  min-height: 100vh;
   width:100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.responsive-wrapper-heading{
+  width:100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cont-general{
+  width:100%;
+  position:relative;
+  background-color: #fafafa;
+}
+
 
 .cont-row{
   width: 100%;
@@ -36,6 +51,17 @@ a:link, a:visited, a:hover, a:active{
   display: block;
   clear: both;
 }
+
+.divider{
+  margin: 20px 0;
+  border-top: 1px solid #efefef;
+}
+
+.data-divider{
+  margin: 10px 0;
+  border-top: 1px solid #efefef;
+}
+
 
 .nav-push{
   height:60px;
@@ -75,15 +101,20 @@ a:link, a:visited, a:hover, a:active{
   width: 100px;
 }
 
-.nav ul{
+.nav-main-link{
   max-width: 1000px;
-  margin:  12px auto;
+  margin:  20px auto;
   text-align: center;
 }
 
-.nav ul li{
+.nav .nav-main-link li{
   display: inline-block;
   padding: 0 20px;
+}
+
+.nav .nav-right li{
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .nav ul li a{
@@ -115,6 +146,20 @@ a:link, a:visited, a:hover, a:active{
   -webkit-transition: border linear 0.2 s;
 }
 
+#nav-responsive{
+  position:relative;
+  top:-60px;
+  margin: 0 auto;
+  width:100%;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+.nav-right{
+  margin-top:10px;
+  float:right;
+}
+
 #nav-hamburger{
   display:none;
   cursor: pointer;
@@ -139,4 +184,21 @@ a:link, a:visited, a:hover, a:active{
 
 .float-right{
   float:right;
+}
+
+.dropdown{
+  width:100px;
+  background-color:white;
+  position:absolute;
+  box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2);
+  top: 60px;
+}
+
+.nav .nav-right .dropdown ul li{
+  width:100%;
+  padding: 10px;
+}
+
+.nav .nav-right .dropdown ul li:hover{
+  background-color:#fafafa;
 }
