@@ -13,6 +13,7 @@
   width:100%;
   position:relative;
   background-color: #fafafa;
+  padding-bottom:100px;
 }
 
 .main-box{
@@ -29,6 +30,7 @@
   max-width: 700px;
   border-radius: 2px;
   padding: 50px 20px ;
+  overflow:auto;
 }
 
 .main-h{
@@ -87,7 +89,7 @@
   -webkit-transition: border linear 0.2 s;
 }
 
-.main-form:focus{
+.main-form:focus, .main-form:active{
   border: 1px solid #27989f;
   transition: border linear 0.2s;
   -ms-transition: border linear 0.2s;
@@ -108,6 +110,10 @@
 .register-row{
   display:block;
   text-align: center;
+}
+
+.row{
+  display:block;
 }
 
 .margin-right{
@@ -568,25 +574,63 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
 }
 
-@media only screen and (max-width: 480px) {
-  .register-column{
-    width: 100%;
-  }
-  .margin-right{
-    margin-right:0px;
-  }
+#form-add{
+  width:calc( 100% - 50px);
+  float:left;
 }
 
+#btn-add{
+  height:50px;
+  width:50px;
+}
+
+.display-instance{
+  background-color:#27989f;
+  padding-top:15px;
+  color:white;
+  float:left;
+  border: none;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+}
+
+.display-cross{
+  display:inline-block;
+  margin-left:10px;
+  cursor: pointer;
+}
+
+#submit-id{
+  max-width:700px;
+  margin: 0 auto;
+}
+
+@media only screen
+and (max-width: 1024px) {
+  /*NAV MOBILE*/
+
+  #nav-hamburger{
+    display:block !important;
+  }
+
+  .nav .nav-main-link li{
+    display: block;
+    padding: 0 20px;
+  }
+
+  .nav-right, .nav-main-link{
+    display:none;
+  }
+
+  .nav-logo{
+    top:0;
+    position:fixed !important;
+  }
+}
 
 /*PHONE*/
 @media only screen
 and (max-width: 736px) {
-  /*NAV MOBILE*/
-
-  #nav-hamburger{
-    display:block;
-  }
-
   .col-left{
     width:100%;
   }
@@ -608,9 +652,32 @@ and (max-width: 736px) {
     text-align:center;
     position:relative;
   }
-  /*
-  .nav-logout{
-  display:none;
+
+  .display-instance{
+    margin: 0 0 10px 0;
+    float:none;
+    width:100%;
+  }
+
+  .display-cross{
+    float:right;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .register-column{
+    width: 100%;
+  }
+  .margin-right{
+    margin-right:0px;
+  }
+}
+
+
+
+/*
+.nav-logout{
+display:none;
 }
 
 .nav-center{

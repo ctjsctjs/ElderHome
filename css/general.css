@@ -18,6 +18,10 @@ body{
   margin-right:0px !important;
 }
 
+option{
+    padding:5px 0;
+  }
+
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
   color: #444;
@@ -71,7 +75,6 @@ a:link, a:visited, a:hover, a:active{
 /*NAV*/
 .nav{
   z-index:10;
-  padding: 0 20px;
   background-color: white;
   height: 60px;
   position: fixed;
@@ -119,8 +122,8 @@ a:link, a:visited, a:hover, a:active{
 
 .nav ul li a{
   color: #27989f;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .nav ul li a:hover{
@@ -161,11 +164,13 @@ a:link, a:visited, a:hover, a:active{
 }
 
 #nav-hamburger{
+  position:fixed;
+  top:20px;
+  right:20px;
   display:none;
   cursor: pointer;
   font-size:25px;
-  margin-top:8px;
-  color: #ff7c7c;
+  color: #27989f;
 }
 
 #nav-mobile-logout{
@@ -187,6 +192,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .dropdown{
+  display:none;
   width:100px;
   background-color:white;
   position:absolute;
@@ -201,4 +207,24 @@ a:link, a:visited, a:hover, a:active{
 
 .nav .nav-right .dropdown ul li:hover{
   background-color:#fafafa;
+}
+
+#active{
+  color: #22858b;
+  font-weight: 700;
+}
+
+.nav-mobile{
+  display:none;
+  width:100%;
+  box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2);
+  position:relative;
+  top:60px;
+}
+
+.nav-mobile li{
+  background-color:white;
+  height:60px;
+  text-align: center;
+  padding-top:15px;
 }

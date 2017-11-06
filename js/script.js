@@ -2,7 +2,7 @@ $(document).ready(function () {
   console.log("OK");
 
   $('#nav-hamburger').click(function(){
-    $(".nav-center").slideToggle(100, "linear");
+    $(".nav-mobile").slideToggle(100, "linear");
   });
 });
 
