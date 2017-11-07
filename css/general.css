@@ -19,8 +19,8 @@ body{
 }
 
 option{
-    padding:5px 0;
-  }
+  padding:5px 0;
+}
 
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
@@ -116,7 +116,7 @@ a:link, a:visited, a:hover, a:active{
 
 .nav .nav-right li{
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .nav ul li a{
@@ -190,13 +190,17 @@ a:link, a:visited, a:hover, a:active{
   float:right;
 }
 
+.profile-dropdown{
+  position: relative;
+}
+
 .dropdown{
   display:none;
   width:100px;
   background-color:white;
   position:absolute;
   box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2);
-  top: 60px;
+  top:40px;
 }
 
 .nav .nav-right .dropdown ul li{
@@ -228,18 +232,39 @@ a:link, a:visited, a:hover, a:active{
   padding-top:15px;
 }
 
+.notif-number{
+  position:absolute;
+  z-index:-10px;
+}
+
+.notif-number div{
+  width: 18px;
+  height: 18px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 10px;
+  background-color:red;
+  position:relative;
+  color:white;
+  font-size:10px;
+  text-align: center;
+  padding-top:4px;
+  bottom:5px;
+  left:10px;
+}
+
 /* Removes the clear button from date inputs */
 input[type="date"]::-webkit-clear-button {
-    display: none;
+  display: none;
 }
 
 /* Removes the spin button */
 input[type="date"]::-webkit-inner-spin-button {
-    display: none;
+  display: none;
 }
 
 /* Always display the drop down caret */
 input[type="date"]::-webkit-calendar-picker-indicator {
-    color: #27989f;
-    cursor: pointer;
+  color: #27989f;
+  cursor: pointer;
 }

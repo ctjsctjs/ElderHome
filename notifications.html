@@ -18,22 +18,31 @@
     <div id="nav-responsive">
       <a href="home.html" class="nav-logo"><img src="images/logo.svg"></a>
       <ul class="nav-right">
-        <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+        <li>
+          <a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i></a>
+          <div class="notif-number"><div>5</div></div>
+        </li>
+        <li class="profile-dropdown">
+          <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
           <div class="dropdown">
             <ul>
-              <li><a href="#">awdawd</a></li>
-              <li><a href="#">awdawd</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">Logout</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
         <li><input type="text" class="nav-form" name="search" placeholder="Search patients" value=""></li>
         <li><a href="#">Back</a></li>
       </ul>
-      <div class="float-right">
-        <i class="fa fa-bars" aria-hidden="true" id="nav-hamburger"></i>
-      </div>
+        <div id="nav-hamburger"><i class="fa fa-bars" aria-hidden="true" id="nav-hamburger"></i></div>
     </div>
+    <ul class="nav-mobile">
+      <li><a href="notifications.html">Notifications</a></li>
+      <li><a href="patients.html">Patients</a></li>
+      <li><a href="#">Staff Schedule</a></li>
+      <li><a href="editPofile.html">Edit Profile</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
   </nav>
   <div class="wrapper">
     <div class="cont-home">
@@ -85,7 +94,7 @@
             </div>
             <span class="notif-cross"><i class="fa fa-times" aria-hidden="true"></i></span>
           </div>
-          
+
         </div>
       </div>
     </div>
