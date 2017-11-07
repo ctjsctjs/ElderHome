@@ -28,7 +28,6 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .responsive-wrapper{
-  min-height: 100vh;
   width:100%;
   max-width: 1440px;
   margin: 0 auto;
