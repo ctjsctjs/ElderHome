@@ -343,12 +343,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .panel-calendar{
-  position:absolute;
-  height:70px;
   font-size:13px;
 }
 
+.panel-calendar-text{
+display:inline-block;
+}
+
 .panel-calendar input{
+  width:auto;
   margin-left:10px;
 }
 
@@ -626,6 +629,20 @@ and (max-width: 1024px) {
   .nav-logo{
     top:0;
     position:fixed !important;
+  }
+
+  #panel-edit{
+  }
+
+  .panel-calendar{
+    position: relative;
+  }
+  .panel-calendar input{
+    position: relative;
+  }
+
+  .panel{
+    height:auto;
   }
 }
 

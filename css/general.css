@@ -45,6 +45,7 @@ a:link, a:visited, a:hover, a:active{
   width:100%;
   position:relative;
   background-color: #fafafa;
+  overflow: auto;
 }
 
 
@@ -130,7 +131,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .nav-form{
-  width:200px;
+  width:150px;
   padding:10px;
   height:40px;
   border-radius: 2px;
