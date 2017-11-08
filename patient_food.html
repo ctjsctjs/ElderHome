@@ -75,60 +75,24 @@
             <button type="submit" class="button btn-wide button-blue" id="trace-patient-btn">Trace Patient</button>
           </div>
         </div>
-        <div class="col-right panel" id="heartrate_panel">
-          <span class="panel-calendar">Showing results for: <input type="text" class="nav-form" name="search" placeholder="Today" value=""></span>
-          <a href="editPatient.html"><button class="button button-blue float-right" id="panel-edit">Edit</button></a>
+        <div class="col-right panel">
+          <form class="form" role="form" autocomplete="off" action="" method="">
+            <div class="panel-calendar">
+              <span class="panel-calendar-text">Showing results for:</span>
+              <input type="date" class="nav-form date-form" name="dateFrom" placeholder="From" value="">
+              <input type="date" class="nav-form date-form" name="dateTo" placeholder="To" value="">
+            </div>
+            <button type="submit" class="button button-blue float-right" id="panel-edit">Search</button>
+          </form>
         </div>
-        <div class="col-right">
-          <div class="data">
-            <span class="data-date">Today, 05/11/2017</span>
-            <div class="data-row">
-              <ul>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 8 a.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-                <li class="data-box missed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 1 p.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Missed</span>
-                </li>
-                <li class="data-box">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 p.m</span>
-                  <hr class="data-divider">
-                  <span class="data-food-main">Chicken Rice, Lotus Soup</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="data">
-            <span class="data-date">Today, 05/11/2017</span>
-            <div class="data-row">
-              <ul>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 8 a.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 1 p.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 p.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-right" id="fbFoodData">
         </div>
       </div>
     </div>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/generateContent.js"></script>
+  <script type="text/javascript" src="js/patient_food.js"></script>
 </body>

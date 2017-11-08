@@ -127,8 +127,6 @@
   padding: 50px 0;
   border-bottom: 1px solid #efefef;
   margin-bottom:50px;
-  height: 125px;
-
 }
 
 .heading-bar span{
@@ -333,6 +331,11 @@ input[type=number]::-webkit-outer-spin-button {
   color: #888;
 }
 
+.patient-list-wrapper{
+  max-width: 1000px;
+  margin:0 auto;
+}
+
 /*HEARTRATE*/
 .panel{
   height:80px;
@@ -344,10 +347,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .panel-calendar{
   font-size:13px;
+  display: inline-block;
 }
 
 .panel-calendar-text{
-display:inline-block;
+  display:inline-block;
 }
 
 .panel-calendar input{
@@ -377,7 +381,6 @@ display:inline-block;
 .data-row{
   overflow-x: scroll;
   overflow-y: hidden;
-  white-space:nowrap;
   padding:20px 0;
 }
 
@@ -631,9 +634,6 @@ and (max-width: 1024px) {
     position:fixed !important;
   }
 
-  #panel-edit{
-  }
-
   .panel-calendar{
     position: relative;
   }
@@ -644,6 +644,35 @@ and (max-width: 1024px) {
   .panel{
     height:auto;
   }
+
+  .panel-edit-wrapper{
+    overflow: auto;
+  }
+
+  #panel-edit{
+    width:100%:
+  }
+
+  .date-form{
+    width:100% !important;
+    margin:0 0 10px 0!important;
+  }
+
+  .panel-calendar{
+    display:block;
+  }
+
+  .panel-calendar-text{
+    text-align: center;
+    display:block;
+    margin: 10px 0;
+  }
+
+
+  #panel-edit{
+    width:100%;
+  }
+
 }
 
 /*PHONE*/
@@ -680,9 +709,26 @@ and (max-width: 736px) {
   .display-cross{
     float:right;
   }
+
+  .responsive-wrapper-heading .btn-wide-mobile{
+  }
+
+  .wrapper-patient-pic{
+    height:100px;
+    width:100px;
+  }
+
+  .patient-button h{
+    font-size:20px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .patient-button{
+    width:100%;
+    display:block;
+    float:none !important;
+  }
   .register-column{
     width: 100%;
   }

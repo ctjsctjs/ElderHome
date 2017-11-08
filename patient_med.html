@@ -34,7 +34,7 @@
         <li><input type="text" class="nav-form" name="search" placeholder="Search patients" value=""></li>
         <li><a href="#">Back</a></li>
       </ul>
-        <div id="nav-hamburger"><i class="fa fa-bars" aria-hidden="true" id="nav-hamburger"></i></div>
+      <div id="nav-hamburger"><i class="fa fa-bars" aria-hidden="true" id="nav-hamburger"></i></div>
     </div>
     <ul class="nav-mobile">
       <li><a href="notifications.html">Notifications</a></li>
@@ -73,48 +73,24 @@
             <button type="submit" class="button btn-wide button-blue" id="trace-patient-btn">Trace Patient</button>
           </div>
         </div>
-        <div class="col-right panel" id="heartrate_panel">
-          <span class="panel-calendar">Showing results for: <input type="text" class="nav-form" name="search" placeholder="Today" value=""></span>
-          <a href="editPatient.html"><button class="button button-blue float-right" id="panel-edit">Edit</button></a>
-        </div>
-        <div class="col-right">
-          <div class="data">
-            <span class="data-date">Today, 05/11/2017</span>
-            <div class="data-row">
-              <ul>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 8 a.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 11 a.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 2 p.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-                <li class="data-box fed">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 p.m</span>
-                  <hr class="data-divider">
-                  <span class="data-bp-main">Fed</span>
-                </li>
-                <li class="data-box">
-                  <span class="data-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 p.m</span>
-                  <hr class="data-divider">
-                  <span class="data-food-main">Zapdol, Bacterium</span>
-                </li>
-              </ul>
+        <div class="col-right panel">
+          <form class="form" role="form" autocomplete="off" action="" method="">
+            <div class="panel-calendar">
+              <span class="panel-calendar-text">Showing results for:</span>
+              <input type="date" class="nav-form date-form" name="dateFrom" placeholder="From" value="">
+              <input type="date" class="nav-form date-form" name="dateTo" placeholder="To" value="">
             </div>
-          </div>
+            <button type="submit" class="button button-blue float-right" id="panel-edit">Search</button>
+          </form>
+        </div>
+        <div class="col-right" id="fbMedData">
         </div>
       </div>
     </div>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/generateContent.js"></script>
+  <script type="text/javascript" src="js/patient_med.js"></script>
 </body>

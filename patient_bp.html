@@ -50,6 +50,7 @@
       <div class="heading-bar">
         <div class="responsive-wrapper-heading">
           <span>Blood Pressure Record</span>
+          <a href="editPatient.html"><button class="button button-blue float-right">Edit Patient</button></a>
         </div>
       </div>
       <div class="responsive-wrapper">
@@ -70,13 +71,15 @@
             <button type="submit" class="button btn-wide button-blue" id="trace-patient-btn">Trace Patient</button>
           </div>
         </div>
-        <div class="col-right panel" id="heartrate_panel">
-          <a href="editPatient.html"><button class="button button-blue float-right" id="panel-edit">Edit</button></a>
-          <div class="panel-calendar">
-            <span class="panel-calendar-text">Showing results for:</span>
-            <input type="date" class="nav-form" name="dateFrom" placeholder="From" value="">
-            <input type="date" class="nav-form" name="dateTo" placeholder="To" value="">
-          </div>
+        <div class="col-right panel">
+          <form class="form" role="form" autocomplete="off" action="" method="">
+            <div class="panel-calendar">
+              <span class="panel-calendar-text">Showing results for:</span>
+              <input type="date" class="nav-form date-form" name="dateFrom" placeholder="From" value="">
+              <input type="date" class="nav-form date-form" name="dateTo" placeholder="To" value="">
+            </div>
+            <button type="submit" class="button button-blue float-right" id="panel-edit">Search</button>
+          </form>
         </div>
         <div class="col-right">
           <div class="data">
